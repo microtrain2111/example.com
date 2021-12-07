@@ -5,8 +5,8 @@ require '../../core/session.php';
 checkSession();
 //Build the page metadata
 $meta = [];
-$meta['description'] = "User View MicroTrain2108";
-$meta['keywords'] = "user, view, MicroTrain2108";
+$meta['description'] = "User View MicroTrain2111";
+$meta['keywords'] = "user, view, MicroTrain2111";
 
 $input = filter_input_array(INPUT_GET);
 

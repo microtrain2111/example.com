@@ -3,8 +3,8 @@ require '../../config/keys.php';
 require '../../core/db_connect.php';
 //Build the page metadata
 $meta = [];
-$meta['description'] = "User Delete MicroTrain2108";
-$meta['keywords'] = "user, delete, MicroTrain2108";
+$meta['description'] = "User Delete MicroTrain2111";
+$meta['keywords'] = "user, delete, MicroTrain2111";
 
 $args=[
   'id'=>FILTER_UNSAFE_RAW,

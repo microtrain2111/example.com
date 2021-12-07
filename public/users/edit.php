@@ -4,8 +4,8 @@ require '../../config/keys.php';
 require '../../core/db_connect.php';
 //Build the page metadata
 $meta = [];
-$meta['description'] = "User Edit MicroTrain2108";
-$meta['keywords'] = "user, edit, MicroTrain2108";
+$meta['description'] = "User Edit MicroTrain2111";
+$meta['keywords'] = "user, edit, MicroTrain2111";
 
 // Get the user 
 $get = filter_input_array(INPUT_GET);

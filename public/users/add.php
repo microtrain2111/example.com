@@ -6,8 +6,8 @@ require '../../core/session.php';
 checkSession();
 //Build the page metadata
 $meta = [];
-$meta['description'] = "User Add MicroTrain2108";
-$meta['keywords'] = "user, add, MicroTrain2108";
+$meta['description'] = "User Add MicroTrain2111";
+$meta['keywords'] = "user, add, MicroTrain2111";
 
 $message=null;
 
