@@ -16,6 +16,6 @@ while ($row = $stmt->fetch())
     $content .= "<div><a href=\"view.php?slug={$row['slug']}\">{$row['title']}</a></div>";
 }
 
-$content .="<p><a href=\"add.php\">New Post</a><br>";
+$content .="<br><hr><div><a href=\"add.php\">New Post</a></div><br>";
 
 include '../../core/layout.php';

@@ -8,7 +8,6 @@ $meta['keywords'] = "contact, web development, application development, MicroTra
 
 $content = <<<EOT
 <form action="contact.php" method="POST">
-    {$message}
     <input type="hidden" name="subject" value="New submission!">
   
   <div class="form-control">

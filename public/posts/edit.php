@@ -2,7 +2,7 @@
 require '../../core/functions.php';
 require '../../core/db_connect.php';
 require '../../core/bootstrap.php';
-checkSession();
+// checkSession();
 
 // Get the post
 $get = filter_input_array(INPUT_GET);

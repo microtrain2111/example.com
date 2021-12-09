@@ -1,7 +1,7 @@
 <?php
 require '../../core/db_connect.php';
 require '../../core/bootstrap.php';
-checkSession();
+// checkSession();
 
 $args=[
   'id'=>FILTER_UNSAFE_RAW,
