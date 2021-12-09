@@ -1,6 +1,7 @@
 <?php
 require '../../config/keys.php';
 require '../../core/db_connect.php';
+
 //Build the page metadata
 $meta = [];
 $meta['description'] = "User Delete MicroTrain2111";
