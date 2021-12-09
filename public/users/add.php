@@ -2,8 +2,7 @@
 require '../../core/functions.php';
 require '../../config/keys.php';
 require '../../core/db_connect.php';
-require '../../core/session.php';
-checkSession();
+
 //Build the page metadata
 $meta = [];
 $meta['description'] = "User Add MicroTrain2111";
@@ -32,7 +31,7 @@ if(!empty($input)){
         $input['last_name'],
         $input['email']
     ])){
-       header('LOCATION:./view.php?email=' . $input['email']);
+       header('LOCATION:/example.com/public/users');
     }else{
         $message = 'Something bad happened';
     }
