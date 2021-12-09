@@ -1,6 +1,8 @@
 <?php
-require '../config/keys.php';
+// require '../config/keys.php';
 require '../core/db_connect.php';
+require '../core/bootstrap.php';
+
 
 $meta=[];
 $meta['description'] = "MicroTrain2111 Site For Web Development West Loop";

@@ -1,5 +1,7 @@
 <?php
 require '../../core/db_connect.php';
+require '../../core/bootstrap.php';
+// checkSession();
 
 $meta = [];
 $meta['description'] = "Posts MicroTrain2111 Post List";
