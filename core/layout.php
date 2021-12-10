@@ -102,9 +102,9 @@ function active($name){
 
           <!-- Copyright -->
           <div class="footer-copyright text-center py-3">© 2021 Copyright MicroTrain2111
-                <a href="terms.php">Terms</a> |
-                <a href="privacy.php">Privacy</a> |
-                <a href="cookies.php">Cookies</a>
+                <a href="http://localhost/example.com/public/terms.php">Terms</a> |
+                <a href="http://localhost/example.com/public/privacy.php">Privacy</a> |
+                <a href="http://localhost/example.com/public/cookies.php">Cookies</a>
             <!-- </ul> -->
           </div>
     </div>
