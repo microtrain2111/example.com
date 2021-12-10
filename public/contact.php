@@ -1,47 +1,38 @@
 <?php
-
+// require '../core/bootstrap.php';
 require '../core/processContactForm.php';
 //Build the page metadata
+
 $meta = [];
-$meta['description'] = "Contact MicroTrain2111";
+$meta['title']="Contact MicroTrain2111";
+$meta['description'] = "Contact MicroTrain2111 Form";
 $meta['keywords'] = "contact, web development, application development, MicroTrain2111";
 
 $content = <<<EOT
+<h1>{$meta['title']}</h1>
 <form action="contact.php" method="POST">
     <input type="hidden" name="subject" value="New submission!">
   
-  <div class="form-control">
+  <div class="form-group">
   <label for="name">Name</label>
-    <input id="name" type="text" name="name" value="{$valid->userInput('name')}">
-    <div class="text-error">{$valid->error('name')}</div>
+    <input class="form-control" id="name" type="text" name="name" value="{$valid->userInput('name')}">
+    <div class="text text-danger">{$valid->error('name')}</div>
   </div>
-  <div class="form-control">
+
+  <div class="form-group">
   <label for="email">Email</label>
-    <input id="email" type="text" name="email" value="{$valid->userInput('email')}">
-    <div class="text-error">{$valid->error('email')}</div>
+    <input class="form-control" id="email" type="text" name="email" value="{$valid->userInput('email')}">
+    <div class="text text-danger">{$valid->error('email')}</div>
   </div>
-  <div class="form-control">
+  <div class="form-group">
   <label for="message">Message</label>
-    <textarea id="message" name="message">{$valid->userInput('message')}</textarea>
-    <div class="text-error">{$valid->error('message')}</div>
+    <textarea class="form-control" id="message" name="message">{$valid->userInput('message')}</textarea>
+    <div class="text text-danger">{$valid->error('message')}</div>
   </div>
-  <div class="form-control">
-  <input type="submit" value="Send">
-  </div>
-</form>
-<script>
-  var toggleMenu = document.getElementById('toggleMenu');
-  var nav = document.querySelector('nav');
-  toggleMenu.addEventListener(
-    'click',
-    function(){
-      if(nav.style.display=='block'){
-        nav.style.display='none';
-      }else{
-        nav.style.display='block';
-      }
-    }
-  );
+
+  <input type="submit" class="btn btn-primary">
+
+  </form>
 </script>
 EOT;
 

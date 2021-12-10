@@ -1,32 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="Resume MicroTrain2111 Full Stack Web and Mobile Developer">
-      <meta name="keywords" content="web development, application development, MicroTrain2111, LAMP, MEAN, MERN">
-      <title>MicroTrain2111 Resume</title>
-      <link rel="stylesheet" type="text/css" href="./dist/css/main.min.css">
-      <link rel="icon" href="favicon.ico" type="image/x-icon" />
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-      <link rel="manifest" href="site.webmanifest"> 
-    </head>
-    <body>
-      <header>
-        <span class="logo">MicroTrain2111</span>
-        <a id="toggleMenu">Menu<a>
-          <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </header>
-    <main>
+<?php
+require '../core/bootstrap.php';
+
+//Build the page metadata
+$meta = [];
+$meta['description'] = "Resume MicroTrain2111 For Web Development West Loop";
+$meta['keywords'] = "resume, MicroTrain2112, Web development, web development, west loop";
+
+$content = <<<EOT
+<main>
       <section>
       <h1>MicroTrain2111</h1>
       <div>
@@ -150,20 +131,6 @@
       </section>
     
     </main>
-    <script>
+EOT;
 
-      var toggleMenu = document.getElementById('toggleMenu');
-      var nav = document.querySelector('nav');
-      toggleMenu.addEventListener(
-        'click',
-        function(){
-          if(nav.style.display=='block'){
-            nav.style.display='none';
-          }else{
-            nav.style.display='block';
-          }
-        }
-      );
-    </script>
-  </body>
-</html>
+include '../core/layout.php';

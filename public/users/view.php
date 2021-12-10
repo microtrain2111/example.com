@@ -1,5 +1,4 @@
 <?php
-require '../../config/keys.php';
 require '../../core/db_connect.php';
 require '../../core/bootstrap.php';
 checkSession();

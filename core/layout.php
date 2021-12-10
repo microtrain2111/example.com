@@ -45,7 +45,10 @@ function active($name){
       <div class="container">
       <!-- Navbar -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">MicroTrain2108</a>
+      <a class="navbar-brand" href="#">
+                <img src="images/favicon-32x32.png" width="30" height="30" class="d-inline-block align-top" alt="" loading="lazy">
+                MicroTrain2111
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -72,7 +75,12 @@ function active($name){
                   <?php if(!empty($_SESSION['user']['id'])): ?>
                     <a class="nav-link" href="http://localhost/example.com/public/logout.php">Logout</a>
                   <?php else: ?>
+                    <li class="nav-item">
+                    <a class="nav-link <?php echo active('register.php'); ?>" href="http://localhost/example.com/public/register.php">Register</a>
+                    </li>
+                    <li class="nav-item">
                     <a class="nav-link <?php echo active('login.php'); ?>" href="http://localhost/example.com/public/login.php">Login</a>
+                    </li>
                   <?php endif; ?>
                 </li>
                <!-- <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->

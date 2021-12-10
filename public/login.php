@@ -62,7 +62,7 @@ if(!empty($input)){
 
 //Build the page metadata
 $meta=[];
-$meta['title']="Login";
+$meta['title']="Please Login";
 
 $content = <<<EOT
 <!-- 3 Add page title -->
