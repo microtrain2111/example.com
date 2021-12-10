@@ -3,6 +3,7 @@ require '../core/bootstrap.php';
 
 //Build the page metadata
 $meta = [];
+$meta['title'] = "Resume MicroTrain2111";
 $meta['description'] = "Resume MicroTrain2111 For Web Development West Loop";
 $meta['keywords'] = "resume, MicroTrain2112, Web development, web development, west loop";
 

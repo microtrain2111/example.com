@@ -4,10 +4,6 @@ require '../../core/db_connect.php';
 require '../../core/bootstrap.php';
 checkSession();
 
-//Build the page metadata
-$meta = [];
-$meta['description'] = "User Edit MicroTrain2111";
-$meta['keywords'] = "user, edit, MicroTrain2111";
 
 // Get the user 
 $get = filter_input_array(INPUT_GET);
@@ -27,6 +23,9 @@ if(empty($row)){
 //var_dump($row);
 $meta=[];
 $meta['title']= "Edit: {$row['first_name']} {$row['last_name']}";
+$meta['description'] = "User Edit MicroTrain2111";
+$meta['keywords'] = "user, edit, MicroTrain2111";
+
 
 // Update the user
 $message=null;

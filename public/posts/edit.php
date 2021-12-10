@@ -22,6 +22,9 @@ if(empty($row)){
 //var_dump($row);
 $meta=[];
 $meta['title']= "Edit: {$row['title']}";
+$meta['description'] = "Edit Posts MicroTrain2111 Post List";
+$meta['keywords'] = "Edit posts, MicroTrain2111, post list";
+
 
 // Update the post
 $message=null;

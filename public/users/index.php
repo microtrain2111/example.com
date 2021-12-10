@@ -5,6 +5,7 @@ require '../../core/bootstrap.php';
 
 //Build the page metadata
 $meta = [];
+$meta['title']= "Users MicroTrain2111 User List";
 $meta['description'] = "Users MicroTrain2111 User List";
 $meta['keywords'] = "users, MicroTrain2111, user list";
 

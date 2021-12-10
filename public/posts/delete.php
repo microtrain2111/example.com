@@ -24,6 +24,9 @@ if(!empty($input['confirm'])){
 
 $meta=[];
 $meta['title']="DELETE: {$row['title']}";
+$meta['description'] = "Delete Posts MicroTrain2111 Post List";
+$meta['keywords'] = "delete posts, MicroTrain2111, post list";
+
 
 $content=<<<EOT
 <h1 class="text-danger text-center">DELETE: {$row['title']}</h1>

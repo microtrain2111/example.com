@@ -4,6 +4,7 @@ require '../../core/bootstrap.php';
 // checkSession();
 
 $meta = [];
+$meta['title']="Posts MicroTrain2111";
 $meta['description'] = "Posts MicroTrain2111 Post List";
 $meta['keywords'] = "posts, MicroTrain2111, post list";
 

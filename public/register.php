@@ -98,8 +98,12 @@ if(!empty($input)){
     
 }
 
+//Build the page metadata
 $meta=[];
 $meta['title']="Register";
+$meta['description'] = "MicroTrain2111 Register Site For Web Development West Loop";
+$meta['keywords'] = "Register, web development, application development";
+
 
 $content=<<<EOT
 <h1>{$meta['title']}</h1>

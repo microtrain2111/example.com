@@ -40,6 +40,11 @@ if(!empty($input)){
     }
 }
 
+$meta = [];
+$meta['title']="Add Posts MicroTrain2111";
+$meta['description'] = "Add Posts Add MicroTrain2111 Post List";
+$meta['keywords'] = "add posts, MicroTrain2111, post list";
+
 $content = <<<EOT
 <h1>Add a New Post</h1>
 {$message}

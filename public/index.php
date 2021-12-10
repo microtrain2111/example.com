@@ -5,9 +5,9 @@ require '../core/bootstrap.php';
 
 
 $meta=[];
-$meta['description'] = "MicroTrain2111 Site For Web Development West Loop";
 $meta['title']="MicroTrain, Site, Web Development, West Loop";
-
+$meta['description'] = "MicroTrain2111 Site For Web Development West Loop";
+$meta['keywords'] = "contact, web development, application development";
 
 $content=<<<EOT
 <h1>Microtrain 2111</h1>

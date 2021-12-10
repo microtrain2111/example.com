@@ -63,6 +63,8 @@ if(!empty($input)){
 //Build the page metadata
 $meta=[];
 $meta['title']="Please Login";
+$meta['description'] = "MicroTrain2111 Login Site For Web Development West Loop";
+$meta['keywords'] = "login, web development, application development";
 
 $content = <<<EOT
 <!-- 3 Add page title -->

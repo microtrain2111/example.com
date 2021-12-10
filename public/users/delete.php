@@ -3,11 +3,6 @@ require '../../core/db_connect.php';
 require '../../core/bootstrap.php';
 checkSession();
 
-//Build the page metadata
-$meta = [];
-$meta['description'] = "User Delete MicroTrain2111";
-$meta['keywords'] = "user, delete, MicroTrain2111";
-
 $args=[
   'id'=>FILTER_UNSAFE_RAW,
   'confirm'=>FILTER_VALIDATE_INT
@@ -27,8 +22,12 @@ if(!empty($input['confirm'])){
   }
 }
 
+//Build the page metadata
 $meta=[];
 $meta['title']="DELETE: {$row['first_name']} {$row['last_name']}";
+$meta['description'] = "User Delete MicroTrain2111";
+$meta['keywords'] = "user, delete, MicroTrain2111";
+
 
 $content=<<<EOT
 <h1 class="text-danger text-center">DELETE: {$row['first_name']} {$row['last_name']}</h1>

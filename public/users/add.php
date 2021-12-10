@@ -4,10 +4,6 @@ require '../../core/db_connect.php';
 require '../../core/bootstrap.php';
 checkSession();
 
-//Build the page metadata
-$meta = [];
-$meta['description'] = "User Add MicroTrain2111";
-$meta['keywords'] = "user, add, MicroTrain2111";
 
 $message=null;
 
@@ -37,6 +33,12 @@ if(!empty($input)){
         $message = 'Something bad happened';
     }
 }
+
+//Build the page metadata
+$meta = [];
+$meta['title'] = "Add User MicroTrain2111";
+$meta['description'] = "User Add User MicroTrain2111";
+$meta['keywords'] = "user, add, MicroTrain2111";
 
 $content = <<<EOT
 <h1>Add a New User</h1>

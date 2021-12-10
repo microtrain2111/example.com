@@ -12,6 +12,11 @@ $stmt->execute([$slug]);
 
 $row = $stmt->fetch();
 
+$meta = [];
+$meta['title']= "View: {$row['title']}";
+$meta['description'] = "View Posts MicroTrain2111 Post List";
+$meta['keywords'] = "view posts, MicroTrain2111, post list";
+
 
 $content=<<<EOT
 

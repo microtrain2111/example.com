@@ -2,6 +2,7 @@
 require '../core/bootstrap.php';
 
 $meta = [];
+$meta['title'] = "Thank You MicroTrain2111";
 $meta['description'] = "Thank you MicroTrain2108 For Web Development";
 $meta['keywords'] = "Thanks, MicroTrain2108, Web development, web development";
 
